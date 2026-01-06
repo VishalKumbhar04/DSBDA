@@ -1,0 +1,41 @@
+# Create a list
+a = [1, 4, 5, 6]
+print(type(a))          # <class 'list'>
+
+# Append
+a.append(8)
+print(a)                # [1, 4, 5, 6, 8]
+
+# Pop (by index and default)
+a.pop()                 # removes last element (8)
+print(a)                # [1, 4, 5, 6]
+
+# Remove (by value)
+a.remove(4)
+print(a)                # [1, 5, 6]
+
+# Insert (index, value)
+a.insert(3, 2)
+print(a)                # [1, 5, 6, 2]
+
+a.insert(4, 9)
+print(a)                # [1, 5, 6, 2, 9]
+
+# Count
+print(a.count(1))       # 1
+
+# Extend (must pass iterable)
+a.extend([10, 11])
+print(a)                # [1, 5, 6, 2, 9, 10, 11]
+
+# Copy list
+b = a.copy()
+print(b)                # copy of a
+
+# Another list
+c = [17, 18, 19, 13]
+print(type(c))          # <class 'list'>
+
+# Extend list
+c.extend(a)
+print(c)
